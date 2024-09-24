@@ -4,6 +4,7 @@ public class Main {
         printThreeWords();
         checkSumSign();
         printColor();
+        compareNumbers();
     }
     static void printThreeWords() {
         System.out.println("Orange\nBanana\nApple");
@@ -13,9 +14,9 @@ public class Main {
     //и если их сумма больше или равна 0, то вывести в консоль сообщение “Сумма положительная”, в противном случае - “Сумма отрицательная”;
     static void checkSumSign() {
         int a;
-        a = 2;
+        a = 254365;
         int b;
-        b = 3;
+        b = 254365;
         if ((a + b) >= 0) {
             System.out.println("Сумма положительная");
         } else {
@@ -27,7 +28,7 @@ public class Main {
     // если лежит в пределах от 0 (0 исключительно) до 100 (100 включительно), то “Желтый”,
     // если больше 100 (100 исключительно) - “Зеленый”;
     static void printColor() {
-        int value = 0;
+        int value = 10;
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value > 0 && value <= 100) {
@@ -35,6 +36,21 @@ public class Main {
         }
         else {
             System.out.println("Зеленый");
+        }
+    }
+    //4. Создайте метод compareNumbers(), в теле которого объявите две int переменные a и b,
+    //и инициализируйте их любыми значениями, которыми захотите.
+    //Если a больше или равно b, то необходимо вывести в консоль сообщение “a >= b”,
+    //в противном случае “a < b”;
+    static void compareNumbers() {
+        int a;
+        int b;
+        a = 20;
+        b = 20;
+        if (a >= b) {
+            System.out.println("a >= b");
+        } else {
+            System.out.println("a < b");
         }
     }
 }
