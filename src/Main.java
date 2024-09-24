@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Lesson_1");
+        printThreeWords();
+    }
+    static void printThreeWords() {
+    System.out.println("Orange\nBanana\nApple");
     }
 }
