@@ -6,7 +6,6 @@ public class SecondLessons {
         checkSum();
         checkValue();
         checkNumber();
-        printNumberOfString(char hello, int h);
     }
 
     static void checkSum() {
@@ -46,9 +45,4 @@ public class SecondLessons {
 
     //4. Написать метод, которому в качестве аргументов передается строка и число,
     // метод должен отпечатать в консоль указанную строку, указанное количество раз;
-    static void printNumberOfString(char hello, int h) {
-        hello = "Hello reviewer";
-        h = 1;
-    }
-
 }
