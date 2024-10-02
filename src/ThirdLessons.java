@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class SecondLessons {
+public class ThirdLessons {
 
     public static void main(String[] args) {
         checkSum();
