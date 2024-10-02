@@ -8,7 +8,6 @@ public class ThirdLessons {
         checkNumber();
         printSomeNumberOfLines("Have a good day!", 4);
         whatYear();
-        createMassive(4, 3);
 
         //6. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
         //С помощью цикла и условия заменить 0 на 1, 1 на 0;
@@ -56,8 +55,11 @@ public class ThirdLessons {
                 }
             }
         }
-        System.out.println("Задача 7. Результат:" + Arrays.deepToString(table));
+        System.out.println("Задача 9. Результат:" + Arrays.deepToString(table));
 
+        //10. Написать метод, принимающий на вход два аргумента: len и initialValue,
+        // и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.
+        createMassive(4, 3);
     }
 
     //1. Написать метод, принимающий на вход два целых числа и проверяющий,
