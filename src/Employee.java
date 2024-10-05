@@ -22,8 +22,11 @@ public class Employee {
     }
 
     public static void main(String[] args) {
+        // Еще кусочек кода для проверки
+        /*
         Employee ivan = new Employee("Иванов Иван Иванович", "инженер", "ivanov@mail.ru", "+375251122333", 34);
         ivan.displayInfo();
+         */
     }
 }
 
