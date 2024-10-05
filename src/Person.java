@@ -13,6 +13,7 @@ persArray[4] = new Person(...);
 */
 
 import java.util.Arrays;
+
 public class Person {
     public String name;
     public String position;
@@ -21,7 +22,7 @@ public class Person {
     public double salary;
     public int age;
 
-    public Person (String name, String position, String email, String tel, double salary, int age) {
+    public Person(String name, String position, String email, String tel, double salary, int age) {
         this.name = name;
         this.position = position;
         this.email = email;
@@ -30,18 +31,19 @@ public class Person {
         this.age = age;
     }
 
-    Person[] persArray = new Person[5];
-    persArray [0] = new Person ("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312000", 30000, 30);
-    persArray [1] = new Person ("Ivanova Mary", "AQA", "mary@mail.ru", "892312111", 80000, 44);
-    persArray [2] = new Person ("Filimonov Daniil", "Developer", "ilovejava@rumbler.net", "892312222", 120000, 50);
-    persArray [3] = new Person ("Kukaracha Inna", "Sales Manager", "cacheandcookies@gmail.com", "892312333", 35000, 41);
-    persArray [4] = new Person ("Solyanko Lyutozhor", "Boss", "yalyublyuborshch@mailbox.com", "892312444", 130000, 53);
+    public static void main(String[] args) {
 
-    for (int i =0; i < persArray.lenght; i++) {
-        boolean old = persArray.age > 40
-        if (old) {
-            System.out.println(Arrays.toString(persArray[i]));
+        Person[] persArray = new Person[5];
+        persArray[0] = new Person("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312000", 30000, 30);
+        persArray[1] = new Person("Ivanova Mary", "AQA", "mary@mail.ru", "892312111", 80000, 44);
+        persArray[2] = new Person("Filimonov Daniil", "Developer", "ilovejava@rumbler.net", "892312222", 120000, 50);
+        persArray[3] = new Person("Kukaracha Inna", "Sales Manager", "cacheandcookies@gmail.com", "892312333", 35000, 41);
+        persArray[4] = new Person("Solyanko Lyutozhor", "Boss", "yalyublyuborshch@mailbox.com", "892312444", 130000, 53);
+
+        for (int i = 0; i < persArray.length; i++) {
+            if (this.age > 40) {
+                System.out.println(Arrays.toString(new Person[]{persArray[i]}));
+            }
         }
     }
 }
-
