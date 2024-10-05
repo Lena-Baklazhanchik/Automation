@@ -32,5 +32,6 @@ public class Park {
         Park.Attraction mix = new Attraction("Микс", "с 9.00 до 23.00", 535.32);
         System.out.println("Добавлен новый атракцион!");
          */
+
     }
 }
