@@ -50,12 +50,12 @@ public class ThirdLessons {
     //1. Написать метод, принимающий на вход два целых числа и проверяющий,
     //что их сумма лежит в пределах от 10 до 20 (включительно),
     //если да – вернуть true, в противном случае – false.
-    static void checkSum(int a, int b) {
+    static boolean checkSum(int a, int b) {
         int sum = (a + b);
         if (sum >= 10 && sum <= 20) {
-            System.out.println(true);
+            return true;
         } else {
-            System.out.println(false);
+            return false;
         }
     }
 
@@ -88,16 +88,13 @@ public class ThirdLessons {
     //5. Написать метод, который определяет, является ли год високосным,
     //и возвращает boolean (високосный - true, не високосный - false).
     //Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
-    static void whatYear(int y) {
-        boolean condition1 = y % 4 == 0;
-        boolean condition2 = y % 100 != 0;
-        boolean condition3 = y % 400 == 0;
-        if (condition1 && condition2) {
-            System.out.println(true);
-        } else if (condition3) {
-            System.out.println(true);
+    static boolean whatYear(int y) {
+        if (y % 4 == 0 && y % 100 != 0) {
+            return true;
+        } else if (y % 400 == 0) {
+            return true;
         } else {
-            System.out.println(false);
+            return false;
         }
     }
 
