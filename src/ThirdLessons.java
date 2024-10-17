@@ -3,19 +3,13 @@ import java.util.Arrays;
 public class ThirdLessons {
 
     public static void main(String[] args) {
+
         checkSum(1, 35);
         checkValue(-10);
         System.out.println(checkNumber(1));
         printSomeNumberOfLines("Have a good day!", 4);
         whatYear(2025);
-
-        //6. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
-        //С помощью цикла и условия заменить 0 на 1, 1 на 0;
-        int[] oneZyro = {1, 0, 1, 1};
-        for (int i = 0; i < oneZyro.length; i++) {
-            oneZyro[i] = oneZyro[i] == 0 ? 1 : 0;
-        }
-        System.out.println(Arrays.toString(oneZyro));
+        System.out.println(Arrays.toString(arrayOne()));
 
         //7. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 ... 100;
         int[] num = new int[100];
@@ -45,6 +39,17 @@ public class ThirdLessons {
         //10. Написать метод, принимающий на вход два аргумента: len и initialValue,
         // и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.
         createMassive(4, 3);
+    }
+
+    static int[] arrayOne() {
+        //6. Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
+        //С помощью цикла и условия заменить 0 на 1, 1 на 0;
+        int[] oneZyro = {1, 0, 1, 1};
+        for (int i = 0; i < oneZyro.length; i++) {
+            oneZyro[i] = oneZyro[i] == 0 ? 1 : 0;
+        }
+        return oneZyro;
+     //   System.out.println(Arrays.toString(oneZyro));
     }
 
     //1. Написать метод, принимающий на вход два целых числа и проверяющий,
@@ -91,10 +96,8 @@ public class ThirdLessons {
     static boolean whatYear(int y) {
         if (y % 4 == 0 && y % 100 != 0) {
             return true;
-        } else if (y % 400 == 0) {
-            return true;
         } else {
-            return false;
+            return y % 400 == 0;
         }
     }
 
