@@ -10,34 +10,9 @@ public class ThirdLessons {
         printSomeNumberOfLines("Have a good day!", 4);
         whatYear(2025);
         System.out.println(Arrays.toString(arrayOne()));
-
-        //7. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 ... 100;
-        int[] num = new int[100];
-        for (int i = 0; i < num.length; i++) {
-            num[i] = i + 1;
-        }
-        System.out.println(Arrays.toString(num));
-
-        //8. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2.
-        int[] xyz = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-        for (int i = 0; i < xyz.length; i++) {
-            if (xyz[i] < 6) {
-                xyz[i] *= 2;
-            }
-        }
-        System.out.println(Arrays.toString(xyz));
-
-        //9.Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
-        //и с помощью цикла(-ов) заполнить его диагональные элементы единицами
-        int[][] table = new int[5][5];
-        for (int i = 0; i < table.length; i++) {
-            table[i][i] = 1;
-            table[i][table.length - 1 - i] = 1;
-        }
-        System.out.println(Arrays.deepToString(table));
-
-        //10. Написать метод, принимающий на вход два аргумента: len и initialValue,
-        // и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.
+        System.out.println(Arrays.toString(arrayTwo()));
+        System.out.println(Arrays.toString(arrayThree()));
+        System.out.println(Arrays.deepToString(arrayFour()));
         createMassive(4, 3);
     }
 
@@ -49,8 +24,40 @@ public class ThirdLessons {
             oneZyro[i] = oneZyro[i] == 0 ? 1 : 0;
         }
         return oneZyro;
-     //   System.out.println(Arrays.toString(oneZyro));
     }
+
+    static int[] arrayTwo() {
+        //7. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его значениями 1 2 3 4 5 6 7 8 ... 100;
+        int[] num = new int[100];
+        for (int i = 0; i < num.length; i++) {
+            num[i] = i + 1;
+        }
+        return num;
+    }
+
+    static int[] arrayThree() {
+        //8. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2.
+        int[] xyz = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < xyz.length; i++) {
+            if (xyz[i] < 6) {
+                xyz[i] *= 2;
+            }
+        }
+        return xyz;
+        //System.out.println(Arrays.toString(xyz));
+    }
+
+    static int[][] arrayFour() {
+        //9.Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
+        //и с помощью цикла(-ов) заполнить его диагональные элементы единицами
+        int[][] table = new int[5][5];
+        for (int i = 0; i < table.length; i++) {
+            table[i][i] = 1;
+            table[i][table.length - 1 - i] = 1;
+        }
+        return table;
+    }
+
 
     //1. Написать метод, принимающий на вход два целых числа и проверяющий,
     //что их сумма лежит в пределах от 10 до 20 (включительно),
