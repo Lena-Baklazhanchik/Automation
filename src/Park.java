@@ -27,11 +27,7 @@ public class Park {
     }
 
     public static void main(String[] args) {
-        //Еще кусочек кода для проверки
-        /*
         Park.Attraction mix = new Attraction("Микс", "с 9.00 до 23.00", 535.32);
         System.out.println("Добавлен новый атракцион!");
-         */
-
     }
 }
